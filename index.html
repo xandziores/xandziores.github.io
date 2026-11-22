@@ -1,0 +1,640 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b0b0d">
+
+    <meta name="description" content="Portfolio - xandziores">
+    <meta property="og:title" content="Portfolio - xandziores">
+    <meta property="og:description" content="Creating digital experiences. Explore my projects and skills.">
+    <meta property="og:type" content="website">
+
+    <title>Portfolio - xandziores</title>
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b0b0d'/%3E%3Ctext x='50' y='68' font-size='65' text-anchor='middle' fill='%23e89ab8' font-family='Arial'%3Ex.%3C/text%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-logo">xandziores<span></span></div>
+            <div class="loader-line">
+                <span></span>
+            </div>
+            <p>WELCOME TO MY WORLD</p>
+        </div>
+    </div>
+
+    <div class="cursor-glow"></div>
+    <div class="noise"></div>
+    <div class="background-grid"></div>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header class="header" id="header">
+        <div class="container nav-container">
+
+            <a href="#home" class="logo">
+                xandziores<span></span>
+            </a>
+
+            <nav class="navigation" id="navigation">
+                <a href="#home" data-i18n="nav_home">Home</a>
+                <a href="#about" data-i18n="nav_about">O mnie</a>
+                <a href="#skills" data-i18n="nav_skills">Umiejętności</a>
+                <a href="#projects" data-i18n="nav_projects">Projekty</a>
+                <a href="#contact" data-i18n="nav_contact">Kontakt</a>
+            </nav>
+
+            <div class="nav-actions">
+
+                <button class="language-switch" id="languageSwitch" aria-label="Change language">
+                    PL <span>/</span> EN
+                </button>
+
+                <a href="#contact" class="nav-contact" data-i18n="nav_button">
+                    Porozmawiajmy <span>↗</span>
+                </a>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Otwórz menu">
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero section" id="home">
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <div class="availability reveal">
+                        <span class="availability-dot"></span>
+                        <span data-i18n="availability">PORTFOLIO DEWELOPERA</span>
+                    </div>
+
+                    <p class="hero-pretitle reveal" data-i18n="hero_pretitle">
+                        CZEŚĆ, JESTEM
+                    </p>
+
+                    <h1 class="hero-name reveal">
+                        xandziores<span></span>
+                    </h1>
+
+                    <h2 class="hero-title reveal" data-i18n="hero_title">
+                        Tworzę cyfrowe<br>
+                        <span>doświadczenia.</span>
+                    </h2>
+
+                    <p class="hero-description reveal" data-i18n="hero_description">
+                        Developer zainteresowany tworzeniem skryptów FiveM,
+                        autorskich systemów oraz nowoczesnych interfejsów webowych.
+                        Zamieniam pomysły w działające projekty.
+                    </p>
+
+                    <div class="hero-buttons reveal">
+
+                        <a href="#projects" class="button button-primary">
+                            <span data-i18n="hero_button">Zobacz projekty</span>
+                            <span class="button-arrow">↗</span>
+                        </a>
+
+                        <a href="#contact" class="button button-secondary" data-i18n="hero_contact">
+                            Kontakt
+                        </a>
+
+                    </div>
+
+                    <div class="hero-socials reveal">
+                        <span data-i18n="hero_socials">ZNAJDŹ MNIE</span>
+
+                        <a href="#" data-social="github" target="_blank" rel="noopener noreferrer">
+                            GitHub ↗
+                        </a>
+
+                        <a href="#" data-social="discord" target="_blank" rel="noopener noreferrer">
+                            Discord ↗
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="hero-visual reveal">
+
+                    <div class="visual-glow"></div>
+
+                    <div class="code-window">
+
+                        <div class="window-header">
+
+                            <div class="window-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span>developer.lua</span>
+                            <span class="window-icon">✦</span>
+
+                        </div>
+
+                        <div class="code-content">
+
+                            <div><span class="line-number">01</span> <span class="code-purple">local</span> developer = {</div>
+                            <div><span class="line-number">02</span> &nbsp; name = <span class="code-green">"xandziores"</span>,</div>
+                            <div><span class="line-number">03</span> &nbsp; role = <span class="code-green">"Developer"</span>,</div>
+                            <div><span class="line-number">04</span> &nbsp; focus = {</div>
+                            <div><span class="line-number">05</span> &nbsp;&nbsp;&nbsp; <span class="code-green">"FiveM"</span>,</div>
+                            <div><span class="line-number">06</span> &nbsp;&nbsp;&nbsp; <span class="code-green">"Lua"</span>,</div>
+                            <div><span class="line-number">07</span> &nbsp;&nbsp;&nbsp; <span class="code-green">"Web Development"</span></div>
+                            <div><span class="line-number">08</span> &nbsp; },</div>
+                            <div><span class="line-number">09</span> &nbsp; status = <span class="code-green">"Creating..."</span></div>
+                            <div><span class="line-number">10</span> }</div>
+                            <div><span class="line-number">11</span></div>
+                            <div><span class="line-number">12</span> <span class="code-purple">return</span> developer<span class="cursor">_</span></div>
+
+                        </div>
+
+                        <div class="window-footer">
+                            <span><span class="footer-dot"></span> xandziores.dev</span>
+                            <span>UTF-8</span>
+                        </div>
+
+                    </div>
+
+                    <div class="floating-card floating-top">
+                        <span class="floating-icon">⌘</span>
+                        <div>
+                            <strong>FiveM</strong>
+                            <small>Development</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-bottom">
+                        <span class="floating-icon">✦</span>
+                        <div>
+                            <strong>Creative</strong>
+                            <small>Problem solving</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-bottom container">
+
+                <span data-i18n="scroll_text">PRZEWIŃ, ABY ODKRYĆ</span>
+
+                <span class="scroll-line"></span>
+
+                <span>01 — 05</span>
+
+            </div>
+
+        </section>
+
+        <!-- ABOUT -->
+
+        <section class="section about-section" id="about">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-label">
+                        01 / <span data-i18n="about_label">POZNAJ MNIE</span>
+                    </span>
+
+                    <h2 data-i18n="about_title">
+                        Kilka słów <span>o mnie.</span>
+                    </h2>
+
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-main reveal">
+
+                        <p class="about-lead" data-i18n="about_lead">
+                            Nie ograniczam się do pisania kodu.
+                            Lubię tworzyć rzeczy, które mają swój charakter.
+                        </p>
+
+                        <p class="about-description" data-i18n="about_description">
+                            Interesuję się programowaniem oraz projektowaniem
+                            nowoczesnych rozwiązań. Najwięcej czasu poświęcam
+                            środowisku FiveM, gdzie tworzę własne skrypty,
+                            systemy oraz interfejsy. Równocześnie rozwijam
+                            umiejętności związane z technologiami webowymi.
+                        </p>
+
+                        <p class="about-description" data-i18n="about_description_2">
+                            Cenię przejrzysty kod, dopracowane szczegóły
+                            i rozwiązania, które faktycznie spełniają swoje zadanie.
+                        </p>
+
+                    </div>
+
+                    <div class="about-info reveal">
+
+                        <div class="info-card">
+                            <span class="info-number">01</span>
+                            <div>
+                                <h3 data-i18n="info_one_title">FiveM Development</h3>
+                                <p data-i18n="info_one_desc">Skrypty, systemy i integracje.</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-number">02</span>
+                            <div>
+                                <h3 data-i18n="info_two_title">Web Development</h3>
+                                <p data-i18n="info_two_desc">Strony internetowe i interfejsy.</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-number">03</span>
+                            <div>
+                                <h3 data-i18n="info_three_title">UI / GUI / NUI</h3>
+                                <p data-i18n="info_three_desc">Wygląd, wygoda i detale.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SKILLS -->
+
+        <section class="section skills-section" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-label">
+                        02 / <span data-i18n="skills_label">TECHNOLOGIE</span>
+                    </span>
+
+                    <h2 data-i18n="skills_title">
+                        Moje <span>umiejętności.</span>
+                    </h2>
+
+                    <p data-i18n="skills_description">
+                        Technologie i narzędzia, z którymi pracuję i rozwijam swoje projekty.
+                    </p>
+
+                </div>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card reveal">
+                        <div class="skill-top">
+                            <span class="skill-icon">LUA</span>
+                            <span class="skill-number">01</span>
+                        </div>
+                        <h3>Lua</h3>
+                        <p data-i18n="skill_lua">Skrypty i logika aplikacji.</p>
+                        <div class="skill-line"><span style="--skill-width: 85%"></span></div>
+                    </div>
+
+                    <div class="skill-card reveal">
+                        <div class="skill-top">
+                            <span class="skill-icon">JS</span>
+                            <span class="skill-number">02</span>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p data-i18n="skill_js">Interaktywność i funkcjonalność.</p>
+                        <div class="skill-line"><span style="--skill-width: 75%"></span></div>
+                    </div>
+
+                    <div class="skill-card reveal">
+                        <div class="skill-top">
+                            <span class="skill-icon">HTML</span>
+                            <span class="skill-number">03</span>
+                        </div>
+                        <h3>HTML</h3>
+                        <p data-i18n="skill_html">Struktura stron internetowych.</p>
+                        <div class="skill-line"><span style="--skill-width: 90%"></span></div>
+                    </div>
+
+                    <div class="skill-card reveal">
+                        <div class="skill-top">
+                            <span class="skill-icon">CSS</span>
+                            <span class="skill-number">04</span>
+                        </div>
+                        <h3>CSS</h3>
+                        <p data-i18n="skill_css">Design, animacje i responsywność.</p>
+                        <div class="skill-line"><span style="--skill-width: 90%"></span></div>
+                    </div>
+
+                    <div class="skill-card reveal">
+                        <div class="skill-top">
+                            <span class="skill-icon">SQL</span>
+                            <span class="skill-number">05</span>
+                        </div>
+                        <h3>SQL</h3>
+                        <p data-i18n="skill_sql">Bazy danych i zapytania.</p>
+                        <div class="skill-line"><span style="--skill-width: 70%"></span></div>
+                    </div>
+
+                    <div class="skill-card reveal">
+                        <div class="skill-top">
+                            <span class="skill-icon">UI</span>
+                            <span class="skill-number">06</span>
+                        </div>
+                        <h3>UI / GUI / NUI</h3>
+                        <p data-i18n="skill_ui">Projektowanie interfejsów.</p>
+                        <div class="skill-line"><span style="--skill-width: 75%"></span></div>
+                    </div>
+
+                </div>
+
+                <p class="skills-note reveal" data-i18n="skills_note">
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- PROJECTS -->
+
+        <section class="section projects-section" id="projects">
+
+            <div class="container">
+
+                <div class="section-heading projects-heading reveal">
+
+                    <div>
+                        <span class="section-label">
+                            03 / <span data-i18n="projects_label">MOJE REALIZACJE</span>
+                        </span>
+
+                        <h2 data-i18n="projects_title">
+                            Wybrane <span>projekty.</span>
+                        </h2>
+                    </div>
+
+                    <p data-i18n="projects_description">
+                        Kilka przykładów projektów i obszarów, nad którymi pracuję.
+                    </p>
+
+                </div>
+
+                <div class="projects-grid">
+
+                    <article class="project-card project-large reveal">
+
+                        <div class="project-image project-image-outdated">
+                            <img
+                                src="https://cdn.discordapp.com/attachments/1486472503084712128/1533184543916294234/ChatGPT_Image_1_sie_2026_20_47_34.png?ex=6b048a60&is=6b0338e0&hm=704aedd9f2da9885e5f01f5c05473beecc7093ba26ec14c73edb44f653d03e51&"
+                                alt="Gaming development project"
+                                loading="lazy"
+                            >
+
+                            <div class="project-image-overlay"></div>
+			    <div class="project-outdated-label">NIEAKTUALNY</div>
+
+                            <span class="project-category">FIVEM DEVELOPMENT</span>
+
+                            <a href="#" class="project-open" data-project="fivem" aria-label="Project details">↗</a>
+                        </div>
+
+                        <div class="project-details">
+                            <div>
+                                <h3>Bolesławiec RolePlay</h3>
+                                <p data-i18n="project_one_desc">Projekt serwera FiveM z Polskim Loress</p>
+                            </div>
+                            <span class="project-index">01 / 03</span>
+                        </div>
+
+                    </article>
+
+                    <article class="project-card reveal">
+
+                        <div class="project-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=1200&q=85"
+                                alt="Interface design project"
+                                loading="lazy"
+                            >
+
+                            <div class="project-image-overlay"></div>
+
+                            <span class="project-category">UI / UX</span>
+
+                            <a href="#" class="project-open" data-project="interface" aria-label="Project details">↗</a>
+                        </div>
+
+                        <div class="project-details">
+                            <div>
+                                <h3>Custom Interfaces</h3>
+                                <p data-i18n="project_two_desc">Nowoczesne interfejsy i autorskie UI.</p>
+                            </div>
+                            <span class="project-index">02 / 03</span>
+                        </div>
+
+                    </article>
+
+                    <article class="project-card reveal">
+
+                        <div class="project-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=85"
+                                alt="Programming code project"
+                                loading="lazy"
+                            >
+
+                            <div class="project-image-overlay"></div>
+
+                            <span class="project-category">WEB DEVELOPMENT</span>
+
+                            <a href="#" class="project-open" data-project="web" aria-label="Project details">↗</a>
+                        </div>
+
+                        <div class="project-details">
+                            <div>
+                                <h3>Web Projects</h3>
+                                <p data-i18n="project_three_desc">Strony internetowe i rozwiązania webowe.</p>
+                            </div>
+                            <span class="project-index">03 / 03</span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <p class="projects-note reveal" data-i18n="projects_note">
+                    Prezentowane pozycje są przykładowymi kategoriami. Własne realizacje możesz dodać w kodzie HTML.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- EXPERIENCE -->
+
+        <section class="section experience-section" id="experience">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-label">
+                        04 / <span data-i18n="experience_label">MOJA DROGA</span>
+                    </span>
+
+                    <h2 data-i18n="experience_title">
+                        Rozwijam się <span>każdego dnia.</span>
+                    </h2>
+
+                </div>
+
+                <div class="experience-content reveal">
+
+                    <div class="experience-line"></div>
+
+                    <div class="experience-item">
+                        <span class="experience-dot"></span>
+                        <div>
+                            <span class="experience-date">01 / FIVEM</span>
+                            <h3 data-i18n="experience_one_title">FiveM Development</h3>
+                            <p data-i18n="experience_one_desc">
+                                Tworzenie autorskich skryptów, systemów i rozwiązań dla serwerów FiveM.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <span class="experience-dot"></span>
+                        <div>
+                            <span class="experience-date">02 / WEB</span>
+                            <h3 data-i18n="experience_two_title">Web Development</h3>
+                            <p data-i18n="experience_two_desc">
+                                Rozwijanie umiejętności w tworzeniu stron i interfejsów internetowych.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <span class="experience-dot"></span>
+                        <div>
+                            <span class="experience-date">03 / FUTURE</span>
+                            <h3 data-i18n="experience_three_title">More to come</h3>
+                            <p data-i18n="experience_three_desc">
+                                Kolejne pomysły, nowe technologie i następne projekty.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT -->
+
+        <section class="section contact-section" id="contact">
+
+            <div class="container">
+
+                <div class="contact-box reveal">
+
+                    <span class="section-label">
+                        05 / <span data-i18n="contact_label">KONTAKT</span>
+                    </span>
+
+                    <p class="contact-pretitle" data-i18n="contact_pretitle">
+                        MASZ POMYSŁ NA WSPÓŁPRACĘ?
+                    </p>
+
+                    <h2 data-i18n="contact_title">
+                        Stwórzmy coś<br>
+                        <span>wyjątkowego.</span>
+                    </h2>
+
+                    <p class="contact-description" data-i18n="contact_description">
+                        Masz pytanie, projekt lub pomysł? Napisz do mnie.
+                        Chętnie porozmawiam o nowych możliwościach.
+                    </p>
+
+                    <a href="mailto:twoj@email.com" class="button button-primary contact-button" id="emailLink">
+                        <span data-i18n="contact_button">Napisz wiadomość</span>
+                        <span>↗</span>
+                    </a>
+
+                    <div class="contact-links">
+
+                        <a href="#" data-social="github" target="_blank" rel="noopener noreferrer">
+                            GitHub ↗
+                        </a>
+
+                        <a href="#" data-social="discord" target="_blank" rel="noopener noreferrer">
+                            Discord ↗
+                        </a>
+
+                        <a href="mailto:twoj@email.com" id="emailText">
+                            E-mail ↗
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <a href="#home" class="logo footer-logo">
+                xandziores<span></span>
+            </a>
+
+            <p data-i18n="footer_text">
+                Projektuję. Tworzę. Rozwijam się.
+            </p>
+
+            <span class="footer-copy">
+                © <span id="currentYear"></span> xandziores. All rights reserved.
+            </span>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
